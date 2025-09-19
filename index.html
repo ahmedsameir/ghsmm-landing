@@ -1,37 +1,67 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GHsmm - خدمات التسويق عبر السوشيال ميديا</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; direction:rtl; }
-    header { background:#1a73e8; color:#fff; padding:20px; text-align:center; }
-    header h1 { margin:0; font-size:28px; }
-    header p { margin:5px 0 0; }
-    section { padding:40px 20px; text-align:center; }
-    section h2 { font-size:24px; margin-bottom:20px; }
-    section p { font-size:18px; margin-bottom:20px; }
-    .cta { display:inline-block; padding:12px 20px; background:#25d366; color:#fff; text-decoration:none; border-radius:5px; font-size:18px; }
-    footer { background:#333; color:#fff; text-align:center; padding:15px; margin-top:40px; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <!-- Header -->
   <header>
-    <h1>GHsmm</h1>
-    <p>خدمات التسويق عبر السوشيال ميديا</p>
+    <div class="container">
+      <h1>GHsmm</h1>
+      <nav>
+        <a href="#services">الخدمات</a>
+        <a href="#about">من نحن</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>من نحن</h2>
-    <p>نساعدك في إدارة حملاتك الإعلانية وزيادة تواجدك الرقمي على مختلف منصات السوشيال ميديا.</p>
-    <a href="https://wa.me/201234567890" class="cta">تواصل معنا الآن</a>
+  <!-- Hero -->
+  <section class="hero">
+    <h2>خدمات تسويق احترافية عبر السوشيال ميديا</h2>
+    <p>بنساعدك توصل لجمهورك وتزود مبيعاتك بأحدث استراتيجيات التسويق الرقمي.</p>
+    <a href="https://wa.me/201234567890" target="_blank" class="cta">ابدأ الآن</a>
   </section>
 
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>خدماتنا</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>إدارة الحملات</h3>
+        <p>إدارة إعلانات فيسبوك وإنستجرام لتحقيق أفضل نتائج.</p>
+      </div>
+      <div class="card">
+        <h3>تصميم محتوى</h3>
+        <p>تصميم صور وفيديوهات جذابة مناسبة لهويتك.</p>
+      </div>
+      <div class="card">
+        <h3>تحليل الأداء</h3>
+        <p>تتبع النتائج وتقديم تقارير دقيقة لزيادة العائد.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>من نحن</h2>
+    <p>GHsmm شركة متخصصة في التسويق الرقمي، هدفنا نساعد أصحاب المشاريع إنهم يكبروا ويحققوا نجاح على الإنترنت.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>تواصل معنا</h2>
+    <p>ابعتلنا على واتساب أو ايميل، وهنرد عليك بسرعة.</p>
+    <a href="https://wa.me/201234567890" class="cta">راسلنا واتساب</a>
+    <p>أو على الإيميل: <a href="mailto:info@ghsmm.com">info@ghsmm.com</a></p>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>© 2025 GHsmm - جميع الحقوق محفوظة</p>
   </footer>
-
 </body>
 </html>
