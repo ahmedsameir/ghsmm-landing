@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>GHsmm — لوحة تحكم</title>
+  <title>GHsmm — Dashboard</title>
   <style>
     :root{
-      --primary:#1a73e8; 
+      --primary:#1a73e8;
       --accent:#25d366;
       --bg:#f4f6f8;
       --card:#ffffff;
@@ -14,7 +14,7 @@
     }
     *{box-sizing:border-box}
     body{
-      margin:0; font-family: "Cairo", "Segoe UI", Arial, sans-serif;
+      margin:0; font-family: "Segoe UI", Arial, sans-serif;
       background:var(--bg); color:#111; -webkit-font-smoothing:antialiased;
     }
     header{
@@ -38,7 +38,6 @@
     .cta-area{text-align:center;margin:28px 0}
     .btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:700}
     footer{background:#111;color:#fff;padding:14px 16px;text-align:center;margin-top:30px}
-    /* responsive tweaks */
     @media (max-width:600px){
       header h1{font-size:18px}
       .kpi .num{font-size:18px}
@@ -48,16 +47,16 @@
 <body>
   <header>
     <h1>GHsmm</h1>
-    <p>وكالة تسويق رقمي — إدارة حسابات، حملات مدفوعة، وصناعة محتوى</p>
+    <p>Digital Marketing Agency — Ads, Content, and Strategy</p>
   </header>
 
   <nav>
     <div class="nav-inner">
       <div style="font-weight:700;color:#111">GHsmm</div>
       <div class="links">
-        <a href="#about">من نحن</a>
-        <a href="#services">خدماتنا</a>
-        <a href="#contact">تواصل</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
@@ -66,58 +65,59 @@
     <!-- KPI row -->
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin-bottom:18px">
       <div class="card kpi">
-        <div style="font-size:13px;color:var(--muted)">الحملات الحالية</div>
+        <div style="font-size:13px;color:var(--muted)">Active Campaigns</div>
         <div class="num">12</div>
       </div>
       <div class="card kpi">
-        <div style="font-size:13px;color:var(--muted)">متابعات/شهر</div>
+        <div style="font-size:13px;color:var(--muted)">Followers/Month</div>
         <div class="num">+8,450</div>
       </div>
       <div class="card kpi">
-        <div style="font-size:13px;color:var(--muted)">زيادة مبيعات (متوسط)</div>
+        <div style="font-size:13px;color:var(--muted)">Avg. Sales Growth</div>
         <div class="num">+42%</div>
       </div>
     </div>
 
     <section id="about" class="about">
-      <h2 class="section-title">من نحن</h2>
+      <h2 class="section-title">About Us</h2>
       <p>
-        في GHsmm نركز على نتائج قابلة للقياس: استراتيجيات محتوى، حملات ممولة، وتحليلات دقيقة. فريقنا يجمع بين خبرة الإعلانات والتصميم وتحليل البيانات.
+        At GHsmm we focus on measurable results: content strategies, paid campaigns, and detailed analytics. 
+        Our team combines expertise in ads, design, and data analysis.
       </p>
     </section>
 
     <section id="services" style="margin-top:28px">
-      <h2 class="section-title">خدماتنا</h2>
+      <h2 class="section-title">Our Services</h2>
       <div class="grid">
         <div class="card">
-          <h3 style="margin:0 0 8px;color:var(--primary)">إدارة الحملات</h3>
-          <p style="color:var(--muted);margin:0">تصميم، استهداف، وتحسين الحملات لتحقيق أفضل تكلفة تحويل.</p>
+          <h3 style="margin:0 0 8px;color:var(--primary)">Campaign Management</h3>
+          <p style="color:var(--muted);margin:0">Design, targeting, and optimization to achieve the best conversion cost.</p>
         </div>
         <div class="card">
-          <h3 style="margin:0 0 8px;color:var(--primary)">تصميم محتوى</h3>
-          <p style="color:var(--muted);margin:0">صور وفيديوهات قصيرة تناسب منصات Reels & TikTok.</p>
+          <h3 style="margin:0 0 8px;color:var(--primary)">Content Creation</h3>
+          <p style="color:var(--muted);margin:0">Custom visuals and short videos tailored for Reels & TikTok.</p>
         </div>
         <div class="card">
-          <h3 style="margin:0 0 8px;color:var(--primary)">تحليل الأداء</h3>
-          <p style="color:var(--muted);margin:0">تقارير شهرية مع توصيات عملية لرفع العائد.</p>
+          <h3 style="margin:0 0 8px;color:var(--primary)">Performance Analysis</h3>
+          <p style="color:var(--muted);margin:0">Monthly reports with practical recommendations to boost ROI.</p>
         </div>
         <div class="card">
-          <h3 style="margin:0 0 8px;color:var(--primary)">إدارة المجتمعات</h3>
-          <p style="color:var(--muted);margin:0">الردود، الشكاوى، وبناء علاقة مستدامة مع الجمهور.</p>
+          <h3 style="margin:0 0 8px;color:var(--primary)">Community Management</h3>
+          <p style="color:var(--muted);margin:0">Handling responses, complaints, and building strong audience relationships.</p>
         </div>
       </div>
     </section>
 
     <section id="contact" style="margin-top:28px">
-      <h2 class="section-title">مستعد تبدأ؟</h2>
+      <h2 class="section-title">Ready to Start?</h2>
       <div class="cta-area">
-        <a class="btn" href="https://wa.me/201275333657" target="_blank">تواصل عبر واتساب</a>
+        <a class="btn" href="https://wa.me/201275333657" target="_blank">Contact via WhatsApp</a>
       </div>
     </section>
   </main>
 
   <footer>
-    © 2025 GHsmm — جميع الحقوق محفوظة
+    © 2025 GHsmm — All Rights Reserved
   </footer>
 </body>
 </html>
