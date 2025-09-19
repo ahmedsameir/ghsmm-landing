@@ -1,76 +1,126 @@
+/* الخط */
 body {
+  font-family: 'Cairo', sans-serif;
   margin: 0;
-  font-family: "Tahoma", Arial, sans-serif;
+  padding: 0;
   background: #f9f9f9;
   color: #333;
-  line-height: 1.6;
 }
 
-/* Header */
+/* ====== الهيدر ====== */
 header {
-  background: #1a73e8;
+  background: linear-gradient(rgba(26,115,232,0.85), rgba(26,115,232,0.85)), url('https://source.unsplash.com/1600x900/?marketing,digital') no-repeat center/cover;
   color: #fff;
-  padding: 15px 0;
+  text-align: center;
+  padding: 60px 20px;
 }
-header .container {
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  max-width: 1100px;
   margin: auto;
 }
-header nav a {
+
+nav h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
   color: #fff;
-  margin-left: 15px;
   text-decoration: none;
   font-weight: bold;
 }
-header nav a:hover {
-  text-decoration: underline;
+
+.hero h2 {
+  font-size: 32px;
+  margin: 20px 0 10px;
 }
 
-/* Hero */
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(rgba(26,115,232,0.8), rgba(26,115,232,0.8)), url('https://picsum.photos/1200/600?business') no-repeat center/cover;
-  color: #fff;
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
-.hero h2 { font-size: 32px; }
-.hero p { font-size: 18px; margin: 15px 0; }
-.cta {
+
+/* زرار */
+.btn {
   display: inline-block;
   padding: 12px 25px;
   background: #25d366;
   color: #fff;
+  border-radius: 6px;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 18px;
+  font-weight: bold;
   transition: 0.3s;
 }
-.cta:hover { background: #1ebe5c; }
+.btn:hover {
+  background: #1ebe5a;
+}
 
-/* Sections */
-section { padding: 60px 20px; text-align: center; }
-.services .grid {
+/* ====== من نحن ====== */
+.about, .services, .cta {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ====== الخدمات ====== */
+.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
+
 .card {
   background: #fff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
-.about p { max-width: 700px; margin: auto; }
-.contact a { display: inline-block; margin: 10px 0; }
+.card:hover {
+  transform: translateY(-5px);
+}
+.card h3 {
+  margin-top: 0;
+  color: #1a73e8;
+}
 
-/* Footer */
+/* ====== CTA ====== */
+.cta {
+  background: #1a73e8;
+  color: #fff;
+}
+.cta h2 {
+  margin-bottom: 20px;
+}
+
+/* ====== Footer ====== */
 footer {
   background: #333;
   color: #fff;
   text-align: center;
   padding: 15px;
+}
+footer .social a {
+  color: #25d366;
+  text-decoration: none;
+  margin: 0 5px;
 }
