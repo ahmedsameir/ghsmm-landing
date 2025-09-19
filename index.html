@@ -1,76 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QR Project</title>
+  <title>GHsmm - خدمات التسويق عبر السوشيال ميديا</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
       background: #f9f9f9;
       color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      line-height: 1.6;
     }
     header {
-      background: #4CAF50;
-      color: white;
-      padding: 1rem;
+      background: #1a73e8;
+      color: #fff;
+      padding: 50px 20px;
       text-align: center;
-      font-size: 1.5rem;
     }
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 18px;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
       text-align: center;
-      padding: 2rem;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #1a73e8;
     }
-    main h1 {
-      margin-bottom: 1rem;
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
-    main p {
-      margin-bottom: 2rem;
-      color: #555;
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
     }
-    button {
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 6px;
-      background: #4CAF50;
-      color: white;
-      cursor: pointer;
-      transition: 0.3s;
+    .card:hover {
+      transform: translateY(-5px);
     }
-    button:hover {
-      background: #45a049;
+    .cta {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+    }
+    .cta a {
+      background: #25d366;
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
     }
     footer {
       background: #333;
-      color: white;
+      color: #fff;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      padding: 15px;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    QR Code Project
+    <h1>GHsmm</h1>
+    <p>خدمات التسويق عبر السوشيال ميديا لنجاح عملك</p>
   </header>
-  <main>
-    <h1>Welcome to the QR Project</h1>
-    <p>This is a simple demo page for testing deployment.</p>
-    <button>Get Started</button>
-  </main>
+
+  <section>
+    <h2>من نحن</h2>
+    <p>نحن في <b>GHsmm</b> نساعد الشركات والأفراد على تعزيز وجودهم الرقمي من خلال إدارة الحملات الإعلانية،
+      إنشاء محتوى مميز، وتحليل الأداء لتحقيق أفضل النتائج.</p>
+  </section>
+
+  <section>
+    <h2>خدماتنا</h2>
+    <div class="services">
+      <div class="card">
+        <h3>إدارة الحملات الإعلانية</h3>
+        <p>نصمم وننفذ استراتيجيات تسويقية مدروسة على فيسبوك، إنستجرام، وتيك توك.</p>
+      </div>
+      <div class="card">
+        <h3>إنشاء المحتوى</h3>
+        <p>محتوى بصري وكتابي جذاب يساعدك في الوصول لجمهورك المستهدف.</p>
+      </div>
+      <div class="card">
+        <h3>تحليل الأداء</h3>
+        <p>تقارير دقيقة تساعدك على اتخاذ قرارات تسويقية أفضل.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <a href="https://wa.me/201275333657" target="_blank">تواصل معنا الآن عبر واتساب</a>
+  </div>
+
   <footer>
-    &copy; 2025 QR Project. All rights reserved.
+    <p>© 2025 GHsmm - جميع الحقوق محفوظة</p>
   </footer>
+
 </body>
 </html>
