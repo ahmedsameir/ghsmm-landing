@@ -3,67 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GHsmm - خدمات التسويق عبر السوشيال ميديا</title>
+  <title>GHsmm - لوحة التحكم</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f8;
       color: #333;
-      line-height: 1.6;
     }
     header {
       background: #1a73e8;
       color: #fff;
-      padding: 50px 20px;
+      padding: 20px;
       text-align: center;
     }
     header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 18px;
-    }
-    section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h2 {
-      text-align: center;
+      margin: 0;
       font-size: 28px;
-      margin-bottom: 30px;
-      color: #1a73e8;
     }
-    .services {
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #1a73e8;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
     }
     .card {
       background: #fff;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       text-align: center;
       transition: transform 0.2s;
     }
     .card:hover {
       transform: translateY(-5px);
     }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #1a73e8;
+    }
     .cta {
-      display: block;
-      text-align: center;
       margin: 40px auto;
+      text-align: center;
     }
     .cta a {
       background: #25d366;
       color: #fff;
-      padding: 15px 30px;
+      padding: 12px 25px;
       text-decoration: none;
       border-radius: 8px;
       font-size: 18px;
+      font-weight: bold;
     }
     footer {
       background: #333;
@@ -77,36 +84,41 @@
 <body>
 
   <header>
-    <h1>GHsmm</h1>
-    <p>خدمات التسويق عبر السوشيال ميديا لنجاح عملك</p>
+    <h1>GHsmm - لوحة التحكم</h1>
+    <p>خدمات التسويق عبر السوشيال ميديا</p>
   </header>
 
-  <section>
-    <h2>من نحن</h2>
-    <p>نحن في <b>GHsmm</b> نساعد الشركات والأفراد على تعزيز وجودهم الرقمي من خلال إدارة الحملات الإعلانية،
-      إنشاء محتوى مميز، وتحليل الأداء لتحقيق أفضل النتائج.</p>
-  </section>
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">من نحن</a>
+    <a href="#">الخدمات</a>
+    <a href="#">تواصل معنا</a>
+  </nav>
 
-  <section>
-    <h2>خدماتنا</h2>
-    <div class="services">
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:30px;">الخدمات المميزة</h2>
+    <div class="grid">
       <div class="card">
-        <h3>إدارة الحملات الإعلانية</h3>
-        <p>نصمم وننفذ استراتيجيات تسويقية مدروسة على فيسبوك، إنستجرام، وتيك توك.</p>
+        <h3>إدارة الحملات</h3>
+        <p>تصميم وتنفيذ الحملات الإعلانية على فيسبوك وإنستجرام.</p>
       </div>
       <div class="card">
         <h3>إنشاء المحتوى</h3>
-        <p>محتوى بصري وكتابي جذاب يساعدك في الوصول لجمهورك المستهدف.</p>
+        <p>محتوى مرئي وكتابي جذاب يعبر عن علامتك التجارية.</p>
       </div>
       <div class="card">
         <h3>تحليل الأداء</h3>
-        <p>تقارير دقيقة تساعدك على اتخاذ قرارات تسويقية أفضل.</p>
+        <p>تقارير تفصيلية لقياس النتائج وتحسين الاستراتيجيات.</p>
+      </div>
+      <div class="card">
+        <h3>إدارة الحسابات</h3>
+        <p>متابعة وتفاعل مستمر مع جمهورك عبر شبكات التواصل.</p>
       </div>
     </div>
-  </section>
+  </div>
 
   <div class="cta">
-    <a href="https://wa.me/201275333657" target="_blank">تواصل معنا الآن عبر واتساب</a>
+    <a href="https://wa.me/201275333657" target="_blank">تواصل معنا عبر واتساب</a>
   </div>
 
   <footer>
